@@ -1,0 +1,81 @@
+
+.dropdown-menu li {
+    padding: 5px;
+}
+
+nav {
+    height: 100px;
+}
+
+.navbar-brand {
+    margin-left: 3%;
+    flex-basis: 40%;
+}
+
+.navbar-else {
+    margin-right: 10%;
+}
+
+.navbar-else li i {
+    cursor: pointer;
+}
+
+.navbar-else li {
+    position: relative;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-else li:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: limegreen;
+    transition: 0.5s all;
+}
+
+.navbar-else li:not(.phantom-li):hover:before {
+    width: 100%;
+    transition: 0.5s all;
+}
+
+.navbar-else ul {
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+.nav-item {
+    font-family: 'Montserrat';
+}
+.stash-icon {
+    max-width: 35px;
+    cursor: pointer;
+}
+
+.slider {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: limegreen;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.slider i {
+    font-size: 48px;
+    transition: 0.4s all;
+}
+
+.slider:hover i {
+    color: orange;
+    transition: 0.5s color;
+}

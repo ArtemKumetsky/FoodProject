@@ -1,0 +1,20 @@
+.process {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+.process-circle {
+    background: rgba(99, 101, 105, 0.3);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process hr {
+    width: 33%;
+    color: black;
+}

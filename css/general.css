@@ -1,0 +1,67 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FFFFFF;
+}
+.bg-light {
+    background: #FFFFFF!important;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1 {
+    font-size: 64px;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+hr:not([size]) {
+    height: 2px;
+}
+
+.additional {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    color: grey;
+    font-size: 17px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buy-btn {
+    background: limegreen;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px 35px;
+    transition: 0.3s all;
+}
+
+.buy-btn:hover {
+    background: #00ac00;
+    color: white;
+    transition: 0.5s all;
+}
+.circle-in-circle {
+    background: #AFAFAF;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+}
+.navbar-toggler {
+    margin-left: auto;
+}
+.black-screen {
+    display: none;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 1;
+}

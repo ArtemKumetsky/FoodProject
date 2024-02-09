@@ -1,0 +1,68 @@
+.top-hr {
+    color: black;
+    width: 50px;
+}
+
+.top-module-main-img {
+    width: 472.66px;
+    height: 489.61px;
+}
+.top-module, .top-module-el {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-module-elements-el {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.top-module-img {
+    border-radius: 100%;
+    position: relative;
+}
+.top-module-img-border {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 100%;
+    border-left: 2px solid #cfcfcf;
+    display: flex;
+    flex-direction: row;
+}
+.top-module-img-border-circle {
+    background: rgba(99, 101, 105, 0.3);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+.top-module-img-border-el {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.top-module-img-border-el.fish {
+    position: absolute;
+    top: 50px;
+    left: -155px;
+}
+.top-module-img-border-el.greens {
+    position: absolute;
+    top: 210px;
+    left: -201px;
+}
+.top-module-img-border-el.tomato {
+    position: absolute;
+    top: 394px;
+    left: -164px;
+}
+.top-module-food-content span {
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+
+}

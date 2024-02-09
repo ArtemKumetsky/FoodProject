@@ -1,0 +1,65 @@
+#diet span {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.diet-el {
+    display: flex;
+    flex-flow: column;
+    background: white;
+    border-radius: 30px;
+    width: 320px;
+    height: 410px;
+    box-shadow: 0px 34px 62px 18px rgba(34, 60, 80, 0.35);
+    transition: 0.5s all;
+}
+.diet-el:hover {
+    transform: scale(1.1);
+    transition: 0.5s transform;
+}
+
+.diet-image {
+    min-height: 180px!important;
+    max-height: 180px!important;
+    width: 320px;
+    background-position: center;
+    background-size: 100%;
+    -webkit-border-top-left-radius: 30px;
+    -webkit-border-top-right-radius: 30px;
+    margin: -14px 0 0 0;
+}
+.diet-el-info {
+    display: flex;
+    flex-flow: row;
+    font-family: 'Montserrat', sans-serif;
+}
+.diet-el span {
+    font-size: 20px;
+}
+
+
+
+.diet-el-info-number {
+    background: limegreen;
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: white;
+    min-width: 60px;
+    max-width: 60px;
+    max-height: 60px;
+    min-height: 60px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.diet-el-info-variants {
+    display: flex;
+    flex-flow: column;
+}

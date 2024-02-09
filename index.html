@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/modules-css/menu.css">
+    <link rel="stylesheet" href="css/modules-css/header.css">
+    <link rel="stylesheet" href="css/modules-css/top-module.css">
+    <link rel="stylesheet" href="css/modules-css/diet.css">
+    <link rel="stylesheet" href="css/modules-css/process.css">
+    <link rel="stylesheet" href="css/modules-css/start.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-xxl">
+        <div class="container-xxl">
+            <a class="navbar-brand" href="#" id="top">food zone</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation" onclick="adaptive_menu()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="header-menu navbar-else">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown menu-list">
+                        <button onclick="dropdown()" class="btn diet-list">
+                            Рацион
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#process">Как мы работаем?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#diet">Подобрать рацион</a>
+                    </li>
+                    <li>
+                        <img src="img/icons/stash.png" alt="stash" class="stash-icon">
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </nav>
+</header>
+<div class="dropdown-menu dropdown-menu-closed">
+    <ul class="dropdown-menu-content" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="#">Супы</a></li>
+        <li><a class="dropdown-item" href="#">Салаты</a></li>
+        <li><a class="dropdown-item" href="#">Мясные блюда</a></li>
+        <li><a class="dropdown-item" href="#">Вегитарианские блюда</a></li>
+        <li><a class="dropdown-item" href="#">Напитки</a></li>
+        <li class="phantom-li">
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Полный список</a></li>
+    </ul>
+    <button onclick="dropdown()" class="btn-close close-btn"></button>
+</div>
+<div class="adaptive-menu adaptive-menu-closed">
+    <button onclick="adaptive_menu()" class="btn-close close-btn btn"> </button>
+
+    <ul>
+        <li class="nav-item dropdown menu-list">
+            <button onclick="dropdown()" class="btn diet-list">
+                Рацион
+            </button>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#process">Как мы работаем?</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#diet">Подобрать рацион</a>
+        </li>
+        <li>
+            <img src="img/icons/stash.png" alt="stash" class="stash-icon">
+        </li>
+    </ul>
+
+</div>
+
+<a href="#top" class="slider">
+    <i class="material-icons">
+        keyboard_arrow_up
+    </i>
+</a>
+<div class="black-screen black-screen-closed w-100 h-100"></div>
+
+<div class="container-xxl">
+    <div class="row top-module">
+        <div class="col-xxl-4 col-md-12">
+            <h1>
+                ЗДОРОВОЕ ПИТАНИЕ
+            </h1>
+            <div class="additional">
+                <hr class="top-hr">
+                <span class="m-4">
+                    Доставка полезной еды целый день
+                </span>
+            </div>
+            <button class="btn buy-btn mt-5" onclick="selected_diet()">
+                Подобрать рацион
+            </button>
+        </div>
+        <div class="col-xxl-8 col-md-12 margin top-module-el">
+            <div class="row">
+                <div class="col-xxl-4 col-md-0"></div>
+
+                <div class="col-xxl-8 col-md-12 top-module-img">
+
+                    <div class="top-module-img-border w-100 h-100">
+                        <div class="top-module-img-border-el fish">
+                            <div class="top-module-food-content">
+                                <img src="img/top-module/1.png" alt="fish">
+                                <span>
+                                рыба,400 гр
+                            </span>
+                            </div>
+                            <div class="top-module-img-border-circle">
+                                <div class="circle-in-circle"></div>
+                            </div>
+                        </div>
+                        <div class="top-module-img-border-el greens">
+                            <div class="top-module-food-content">
+                                <img src="img/top-module/2.png" alt="greens">
+                                <span>
+                                зелень,200 гр
+                            </span>
+                            </div>
+                            <div class="top-module-img-border-circle">
+                                <div class="circle-in-circle"></div>
+                            </div>
+                        </div>
+                        <div class="top-module-img-border-el tomato">
+                            <div class="top-module-food-content">
+                                <img src="img/top-module/3.png" alt="tomato">
+                                <span>
+                                помидоры,150 гр
+                            </span>
+                            </div>
+                            <div class="top-module-img-border-circle">
+                                <div class="circle-in-circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/top-module/tarelka.png" alt="Food_photo" class="top-module-main-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 pt-5"></div>
+    <div class="row mt-5 pt-5" id="diet">
+        <div class="col-12">
+            <h1>
+                Подбери рацион на свой вкус
+            </h1>
+        </div>
+    </div>
+    <div class="row mt-5 diet">
+        <div class="col-xxl-4 col-md-12 diet-col">
+
+            <div class="diet-el m-5 ">
+                <div class="diet-image" style="background-image: url('img/middle/1.png')"></div>
+                <div class="diet-other p-3">
+                    <h2 class="mt-3">Life</h2>
+                    <div class="diet-el-info">
+                    <span>
+                        Рационы премиального
+                        питания для спорта и
+                        повседневной жизни
+                    </span>
+                        <span class="diet-el-info-number">
+                        5
+                    </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xxl-4 col-md-12 diet-col margin">
+            <div class="diet-el m-5 ">
+                <div class="diet-image" style="background-image: url('img/middle/2.png')"></div>
+                <div class="diet-other p-3">
+                    <h2 class="mt-3">Health</h2>
+                    <div class="diet-el-info ">
+                    <span>
+                        Рационы здорового
+                        питания для поддержания
+                        физической формы
+                    </span>
+                        <span class="diet-el-info-number">
+                        7
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-4 col-md-12 diet-col margin">
+            <div class="diet-el m-5 ">
+                <div class="diet-image" style="background-image: url('img/middle/3.png')"></div>
+                <div class="diet-other p-3">
+                    <h2 class="mt-3">Personal</h2>
+                    <div class="diet-el-info">
+                    <span>
+                        Ваше персональное меню,
+                        составленное отталкиваясь <br>
+                        от ваших предпочтений
+                    </span>
+                        <span class="diet-el-info-number">
+                        ထ
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 pt-5"></div>
+
+    <div class="row mt-5 pt-5">
+        <div class="col-xxl-6 col-md-12">
+            <h1 id="process">
+                Как мы работаем?
+            </h1>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 process">
+                <div class="process-circle">
+                    <div class="circle-in-circle"></div>
+                </div>
+                <hr>
+                <div class="process-circle">
+                    <div class="circle-in-circle"></div>
+                </div>
+                <hr>
+                <div class="process-circle">
+                    <div class="circle-in-circle"></div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-4">
+                <h3>Выберите рацион</h3>
+                <span class="additional process-text">
+                    Мы составляем меню каждую <br>
+                    неделю, считаем БЖУ, выбираем <br>
+                    только свежие продукты
+                </span>
+            </div>
+            <div class="col-4">
+                <h3>Дождитесь курьера</h3>
+                <span class="additional process-text">
+                    Регулярно наш курьер <br>
+                    привозит вам пакет с набором <br>
+                    блюд на весь день
+                </span>
+            </div>
+            <div class="col-4">
+                <h3>Ура! Вы питаетесь правильно</h3>
+                <span class="additional process-text">
+                    Без лишних усилий, потери <br>
+                    времени на кухне и в магазине <br>
+                    за покупкой продуктов.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 pt-5"></div>
+    <div class="row mt-5 pt-5 start">
+        <div class="col-xxl-7">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Не знаете с чего начать?</h1>
+                </div>
+                <div class="col-12">
+                <span class="additional start-additional-span">
+                    Оставьте Ваши данные и с Вами <br>
+                    свяжется наш диетолог, чтобы <br>
+                    подобрать рацион специально для Вас.
+                </span>
+                </div>
+                <div class="col-12">
+                    <form action="" class="mt-5">
+                        <input type="text" placeholder="Ваше имя" class="w-50 m-1">
+                        <input type="text" placeholder="Ваш номер" class="w-50 m-1">
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5 permission">
+                <div class="col-xxl-4 col-md-12 permission-el">
+                    <button class="btn buy-btn" onclick="">
+                        Подобрать рацион
+                    </button>
+                </div>
+                <div class="col-xxl-8 col-md-12 margin permission-el">
+                <span class="additional confirm">
+                    Нажимая на кнопку, Вы даёте согласие
+                    на обработку <b onclick="personal_data_alert()">персональных данных</b>
+                </span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xxl-5 mt-md-5 start-relative">
+            <img src="img/bottom_food_photo.png" alt="photo" class="start-photo w-100">
+        </div>
+    </div>
+    <div class="row mt-5 pt-5 pb-5">
+        <hr>
+    </div>
+    <div class="personal-data-screen personal-data-closed container-xxl">
+        <div class="personal-data">
+            <span> Нажимая на кнопку, Вы даёте разрешение на обработку, введённых в форму данных</span>
+            <button onclick="personal_data_alert()" class="btn-close close-btn"></button>
+        </div>
+    </div>
+
+
+</div>
+<script src="script/jQuery.js"></script>
+<script src="script/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+<script src="script/script.js"></script>
+</body>
+</html>

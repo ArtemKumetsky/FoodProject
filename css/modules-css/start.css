@@ -1,0 +1,45 @@
+.start {
+    background: #FFFFFF;
+    border-radius: 30px;
+}
+.start-additional-span {
+    font-size: 22px !important;
+}
+
+.permission {
+    position: relative;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+form input {
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: #eaeaea;
+    height: 50px;
+    padding: 0 30px;
+}
+
+.confirm {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm a, b {
+    color: limegreen;
+    cursor: pointer;
+}
+
+
+
+
+.start-photo {
+    position: relative;
+}
